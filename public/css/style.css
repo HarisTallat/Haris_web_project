@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Ubuntu:ital,wght@0,500;0,700;1,700&display=swap');
+/* css reset */
+*{
+    margin: 0;
+    text-decoration: none;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root {
+  --slantedText: "Grand Hotel", cursive;
+  --primaryColor: #698f3f;
+  --secondaryColor: #fca311;
+  --mainDark: #3a3e3b;
+  --mainWhite: #fff;
+  --mainGrey: #e5e5e5;
+  --mainTransition: all 0.3s ease-in-out;
+  --letterSpacing: 0.5rem;
+}
+/* navbar */
+.navbar
+{ 
+   height: 75px;
+    background-color : black;
+    width: 100%;
+    font-family: 'Ubuntu',sans-serif;
+    border-radius: 0px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    
+
+
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.navbar ul{
+
+
+    margin-left: 130px;
+    margin: 25px 10px;
+    display: flex;
+ 
+}
+
+.navbar  ul li {
+    list-style: none;
+    margin-right: 30px;
+   
+  
+
+  
+
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 3px 3px;
+    border-radius: 5px;
+
+    margin-left: 60px;
+    display: block;
+    
+
+
+}
+.navbar  li a:hover {
+  
+    background-color: rgb(173, 7, 7);
+    color: white;
+    height: 30px;
+    text-decoration: underline;
+    
+
+}
+
+.navbar input{
+    border-radius: 7px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 3px 17px;
+    width: 149px;
+   
+    
+}
+
+.potfolio{
+  float: right;
+  color: rgb(173, 7, 7);
+  margin-top: 10px;
+  margin-left: 50px;
+}
+.logo img{
+  margin-top: 0px;
+    height: 60px;
+    margin-left: 10px;
+    border-radius: 100px;
+    border: 0.01px solid white;
+    width: 65px;
+padding: 3px;
+}
+.gif img{
+  margin-top: 0px;
+    height: 100px;
+    margin-left: 0px;
+    border-radius: 2px;
+    border: 0.01px solid white;
+    width: 200px;
+padding: 3px;
+}
+.logo_text{
+    color: red;
+  float:left;
+    margin: 25px 18px;
+}
+
+body{
+  background-image: url(https://i.pinimg.com/originals/b4/76/13/b476131c953d2c2d90e26f8473a13b10.jpg);
+  opacity: 0.99;
+  
+}
+/* Services Section */
+#services{
+  margin: 0px;
+  display: flex;
+ 
+}
+#services .box{ 
+  border: 10px double  black;
+  padding: 34px;
+  margin: px px;
+  border-radius: 28px;
+  background: #f2f2f2;
+  margin-bottom: 20px;
+ 
+}
+
+#services .box img{ 
+ height: 160px;
+ margin: auto;
+ display: block;
+ border-radius: 28px;
+}
+
+#services .box p{
+  font-family: 'Bree Serif', serif;
+
+} 
+
+/* Clients Section */
+#client-section{ 
+  position: relative;
+}
+
+#client-section::before{
+content: "";
+position: absolute;
+background: url('../bg.jpg');
+width: 100%;
+height: 100%;
+z-index: -1;
+opacity: 0.3;
+}
+
+#clients{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-item{
+  padding: 34px;
+ 
+}
+.client-item img h4 :hover{
+  background-color: rgb(240, 232, 232);
+
+}
+
+#clients img{
+  height: 124px;
+}
+
+
+/* Contact Section */
+#contact{
+  position: relative;
+}
+#contact::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background: url('../contact.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+} 
+
+#contact-box form{
+  width: 40%;
+}
+
+#contact-box label{
+ font-size: 1.3rem;
+ font-family: 'Bree Serif', serif;
+
+}
+
+
+footer{
+  background: black;
+  color: white;
+  padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary{
+  font-family: 'Bree Serif', serif;
+  font-size: 3.8rem;
+  padding: 12px;
+}
+
+.h-secondary{
+  font-family: 'Bree Serif', serif;
+  font-size: 2.3rem;
+  padding: 12px;
+}
+
+.btn{
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: brown;
+  color: white;
+  margin: 17px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor:pointer;
+}
+
+.center{
+  text-align: center;
+}
+/* footer */
+.footer {
+    background: rgb(95, 94, 94);
+    text-align: center;
+  }
+  .social-icon {
+   
+    font-size: 1.3rem;
+    margin-right: 1rem;
+
+  }
+  .social-icon:hover {
+    color: white;
+  }
+  .footer-text {
+    text-transform: uppercase;
+    color:black;
+    letter-spacing: var(--letterSpacing);
+    margin-top: 1rem;
+    font-size: 0.85rem;
+  }
+  
+.about-img,
+.about-info {
+  padding: 2rem 0;
+}
+.about-picture-container {
+  background: var(--mainWhite);
+  border: 0.5rem solid var(--primaryColor);
+  border-radius: 0.5rem;
+  /* overflow */
+  overflow: hidden;
+}
+.about-picture {
+  width: 100%;
+  display: block;
+  transition: var(--mainTransition);
+}
+.about-picture-container:hover .about-picture {
+  opacity: 0.5;
+  transform: scale(1.2);
+}
+.about-text {
+  margin: 1rem 0;
+  max-width: 26rem;
+}
+
+
+.products {
+  background: rgb(238, 235, 235);
+}
+.products-info,
+.products-inventory {
+  padding: 2rem 0;
+}
+.product-text {
+  color: var(--mainWhite);
+  margin: 1rem 0;
+  max-width: 26rem;
+}
+.product {
+  padding: 2rem 0;
+}
+.product-img {
+  width: 100%;
+  display: block;
+  border: 8px solid black;
+  border-radius: 0.9rem;
+  margin-bottom: 2rem;
+}
+.product-title {
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: normal;
+ 
+}
+.product-section-subtitle {
+  color: red;
+  letter-spacing:normal;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.product p {
+  color: black;
+ 
+  letter-spacing: normal;
+ 
+}
+.profile img{
+  float: right;
+   border-radius: 50px;
+}
+.cars img{
+  border-radius: 5px;
+  height: 265px; ;
+  width: 190px ;
+  border: 5px solid black;
+}
+.car-items h4{
+  float: center;
+}
+.city_img_set{
+  border: 5px solid black;
+  border-radius: 10px;
+  float: right;
+}
+.carousel .carousel-item {
+  height: 500px;
+  
+}
+
+
+
+.carousel-item img {
+    position: absolute;
+    object-fit:cover;
+    top: 0;
+    left: 0;
+    margin-top: 30px;
+margin-bottom: 100px;
+    min-height: 200px;
+}
+
+.contact {
+  padding-top: 2rem;
+}
+.contact-item {
+  margin-bottom: 3rem;
+}
+.contact-title {
+  color: rgb(139, 4, 4);
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+.contact-text {
+  text-transform: uppercase;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  margin: 2rem 0;
+  padding: 1.3rem 0;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+.form-control::placeholder {
+  color: rgb(223, 177, 177);
+  text-transform: uppercase;
+ 
+}
+
+#ar{
+  background-color: green;
+  border-radius: 20px;
+
+}
+#ar2{
+  border-color: 15px solid green;
+  border-radius: 20px;
+}
+
+.product-hover :hover{
+  background-color:  rgb(238, 171, 171);
+  color: black;
+}
+.product-hover {
+  color: rgb(173, 7, 7);
+}
+.active1{
+  background-color: rgb(173, 7, 7);;
+}
+@media only screen and (min-width: 1200px) {
+  .youtube
+  {
+    width:560px;
+    height:315px;
+      
+  }
+  
+  }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .youtube
+  {
+    width:560px;
+    height:315px;
+      
+  }
+  
+  }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  img
+  {
+    width:560px;
+    height:315px;
+      
+      
+  }
+  
+  }
+@media (min-width: 577px) and (max-width: 768px) {
+ img
+  {
+      width:460px;
+    height:265px;
+      
+      
+  }
+  
+  }
+  @media  (max-width: 576px) {
+    img
+      {
+          width:320px;
+          height: 265px;
+          
+      }
+      
+      }
+      @media  only screen and (min-width: 376px)and (max-width: 577px)  {
+        img
+          {
+              width:200px;
+              height: 250px;
+              
+          }
+          
+          }
+          @media only screen and (min-width: 1200px) {
+            .youtube
+            {
+              width:560px;
+              height:315px;
+                
+            }
+            
+            }
+          @media (min-width: 992px) and (max-width: 1199px) {
+            .youtube
+            {
+              width:560px;
+              height:315px;
+                
+            }
+            
+            }
+          
+          @media (min-width: 768px) and (max-width: 991px) {
+            .youtube
+            {
+              width:560px;
+              height:315px;
+                
+                
+            }
+            
+            }
+          @media (min-width: 577px) and (max-width: 768px) {
+           .youtube
+            {
+                width:560px;
+              height:315px;
+                
+                
+            }
+            
+            }
+            @media  (max-width: 576px) {
+              .youtube
+                {
+                    width:420px;
+                    height: 315px;
+                    
+                }
+                
+                }
+                @media  only screen and (min-width: 376px)and (max-width: 577px)  {
+                  .youtube
+                    {
+                        width:300px;
+                        height: 250px;
+                        
+                    }
+                    
+                    }
+            
+  .wavy {
+            position: relative;
+        }
+  
+        .wavy span {
+            position: relative;
+            display: inline-block;
+            color: #fff;
+            font-size: 2em;
+            text-transform: uppercase;
+            animation: animate 2s ease-in-out infinite;
+            animation-delay: calc(0.1s * var(--i));
+        }
+  
+        @keyframes animate {
+            0% {
+                transform: translateY(0px);
+            }
+  
+            20% {
+                transform: translateY(-20px);
+            }
+  
+            40%,
+            100% {
+                transform: translateY(0px);
+            }
+        }
